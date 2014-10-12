@@ -58,7 +58,7 @@ g3=as.numeric(as.character(d2[,9]))
 
 
 #opens png file
-png(filename="./plot3.png")
+png(filename="plot3.png")
 
 # Intializes the Plot
 plot(d3,g1,xlab="",ylab="Energy sub metering",type="n")
