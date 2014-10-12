@@ -54,7 +54,7 @@ d3<-d2[,1]
 
 
 # plots the time series graph 
-lot(d3,f3,xlab="",ylab="Global Active Power (kilowatts)",type="l")
+plot(d3,f3,xlab="",ylab="Global Active Power (kilowatts)",type="l")
 
 # loads the library necessary for creating the png file 
 library("datasets")
