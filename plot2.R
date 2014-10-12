@@ -47,8 +47,21 @@ f2<-as.character(f1)
 # Character Vector to numeric
 f3<-as.numeric(f2)
 
-#Histogram of Global Active Power
-hist(f3, col="red",xlab="Global Active Power (kilowatts)",main="Global Active Power")
+
+# Getting the vector of times
+d3<-d2[,1]
+
+
+
+# plots the time series graph 
+lot(d3,f3,xlab="",ylab="Global Active Power (kilowatts)",type="l")
 
 # loads the library necessary for creating the png file 
 library("datasets")
+
+# Converting the plot to PNG 
+dev.copy(png,file="plot2.png")
+
+# closing development device
+dev.off()
+
