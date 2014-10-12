@@ -54,7 +54,7 @@ hist(f3, col="red",xlab="Global Active Power (kilowatts)",main="Global Active Po
 library("datasets")
 
 
-# Converting the plot to 
+# Converting the plot to PNG
 dev.copy(png,file="plot1.png")
 
 # closing development device
