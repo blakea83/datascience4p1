@@ -56,6 +56,10 @@ g1=as.numeric(as.character(d2[,7]))
 g2=as.numeric(as.character(d2[,8]))
 g3=as.numeric(as.character(d2[,9]))
 
+
+#opens png file
+png(filename="./plot3.png")
+
 # Intializes the Plot
 plot(d3,g1,xlab="",ylab="Energy sub metering",type="n")
 
@@ -74,8 +78,7 @@ legend("topright",legend=c("Sub_metering_1","Sub_metering_2","Sub_metering_3"),l
 # loads the library necessary for creating the png file 
 library("datasets")
 
-# Converting the plot to PNG 
-dev.copy(png,file="plot3.png")
+
 
 # closing development device
 dev.off()
